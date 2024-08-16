@@ -6,6 +6,7 @@ import { Link } from '@/components/Link'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import youtube from '@/images/logos/youtube.svg'
 import { GithubSSO } from './GithubSSO'
+import { Suspense } from 'react'
 
 export const metadata: Metadata = {
   title: 'WhaleCast',
@@ -31,9 +32,11 @@ export default function WhaleCast() {
       intro="WhaleCast is a better way to learn from podcasts. It gives you a way to listen to podcasts on the topics you are interested in."
     >
       <div className="space-y-20">
-        <div>
-          <GithubSSO />
-        </div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <div>
+            <GithubSSO />
+          </div>
+        </Suspense>
         <p className="text-base text-zinc-600 dark:text-zinc-400">
           WhaleCast is a better way to learn from podcasts. I&apos;m building
           the app in public. To follow along, subscribe to the{' '}
