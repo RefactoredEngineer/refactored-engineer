@@ -80,14 +80,17 @@ export default function About() {
             <p>
               I&apos;ve been an entrepreneur and a software engineer for over 13
               years working on projects of all shapes and sizes. My goal is to
-              take those lessons and share them with others by building
-              real-world applications in public.
+              take those lessons and share them with you by building real-world
+              applications in public.
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={YouTubeIcon}>
+            <SocialLink
+              href="https://www.youtube.com/@RefactoredEngineer"
+              icon={YouTubeIcon}
+            >
               Subscribe on YouTube
             </SocialLink>
             <SocialLink
@@ -98,25 +101,25 @@ export default function About() {
               Follow on X
             </SocialLink>
             <SocialLink
-              href="https://github.com/Refactored-Engineer"
+              href="https://github.com/RefactoredEngineer"
               icon={GitHubIcon}
               className="mt-4"
             >
               Follow on GitHub
             </SocialLink>
             <SocialLink
-              href="https://www.linkedin.com/company/refactored-engineer/"
+              href="https://www.linkedin.com/company/refactoredengineer/"
               icon={LinkedInIcon}
               className="mt-4"
             >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:numan@refactoredengineer."
+              href="mailto:hello@refactoredengineer."
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              numan@refactoredengineer.com
+              hello@refactoredengineer.com
             </SocialLink>
           </ul>
         </div>
