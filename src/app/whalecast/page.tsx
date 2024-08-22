@@ -50,7 +50,7 @@ export default function WhaleCast() {
               <Image src={youtube} alt="" className="h-40 w-40" />
             </div>
             <h2 className="mt-3 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href="#">
+              <Card.Link href="https://www.youtube.com/@RefactoredEngineer">
                 Refactored Engineering YouTube channel
               </Card.Link>
             </h2>
